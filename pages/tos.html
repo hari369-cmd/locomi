@@ -94,6 +94,65 @@
             left: -100px;
             filter: blur(30px);
         }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            background: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tos-section {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .tos-section h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tos-section p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .tos-section ul, 
+        .tos-section ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .tos-section ul {
+            list-style-type: disc;
+        }
+
+        .tos-section ol {
+            list-style-type: decimal;
+        }
+
+        .tos-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .tos-note {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-size: 0.875rem;
+        }
+
+        .contact-email {
+            color: #666;
+            font-style: italic;
+        }
     </style>
 
     <script>
@@ -179,105 +238,204 @@
         </div>
     </nav>
 
-    <div id="tos" class="relative p-20 pt-20">
-        <h2 class="text-3xl font-bold text-center mb-2">Terms of Service</h2>
-        <p style="white-space: pre-wrap">
-            These Terms of Service (hereinafter referred to as the "Terms") set forth the terms and conditions for using the Locomi app (hereinafter referred to as the "App") 
-            and establish the rights and obligations between users and the App. Please read all provisions carefully before using the App.
+    <div class="pt-20 pb-20">
+        <div id="tos" class="container">
+            <h1 class="text-3xl font-bold text-center mb-4">Terms of Service</h1>
+            
+            <div class="text-gray-500 text-sm text-center mb-8">
+                Last Updated: 18 Feb 2025
+            </div>
 
-            1. Application
-            1.1. These Terms shall govern all relationships between registered users (as defined in Article 2) and the App regarding its use.
-            1.2. Any rules, guidelines, or other regulations related to the App that are posted within the App or on its website shall constitute an integral part of these Terms.
+            <!-- ToS Content Sections -->
+            <section class="tos-section">
+                <p>
+                    These Terms of Service (hereinafter "Terms") set forth the terms and conditions for using the Locomi app (hereinafter "App") and establish the rights and obligations between users and the App. Please read all provisions carefully before using the App.
+                </p>
+            </section>
 
-            2. Definitions
-            The following terms used in these Terms shall have the meanings set forth below:
-            (1) "App" means the location-based accountability application named "Locomi" (including any related features, regardless of name changes).
-            (2) "Location Task" means a commitment set by a registered user to be at a specific location at a specified time.
-            (3) "Task Amount" means the amount set by the registered user that will be charged if the Location Task is not completed.
-            (4) "Task Time" means the time specified by the registered user by which the Location Task must be completed.
-            (5) "Task Completion" means when a registered user is within 100 meters of the specified location at the Task Time and confirms completion through the App.
-            (6) "Points" means the reward points (200 points per completed task) that users can collect to unlock flower badges.
-            (7) "Outstanding Balance" means any failed payments that the user owes.
-            (8) "Registration Information" means email address, phone number, credit card information, and other information required for using the App.
+            <section class="tos-section">
+                <h2>Article 1 (Application)</h2>
+                <ol>
+                    <li>These Terms shall govern all relationships between registered users and the App regarding its use.</li>
+                    <li>Any rules, guidelines, or other regulations related to the App that are posted within the App or on its website shall constitute an integral part of these Terms.</li>
+                </ol>
+            </section>
 
-            3. Registration
-            3.1. Users must register to use the App by agreeing to these Terms and providing the required Registration Information.
-            3.2. Users must provide accurate, current, and complete information during registration.
-            3.3. Users are responsible for maintaining the confidentiality of their account information and all activities that occur under their account.
+            <section class="tos-section">
+                <h2>Article 2 (Definitions)</h2>
+                <p>The following terms used in these Terms shall have the meanings set forth below:</p>
+                <ol>
+                    <li>"App" means the location-based accountability application "Locomi" (including any related features, regardless of name changes).</li>
+                    <li>"Location Task" means a commitment set by a registered user to be at a specific location at a specified time.</li>
+                    <li>"Task Amount" means the amount set by the registered user that will be charged if the Location Task is not completed.</li>
+                    <li>"Task Time" means the time specified by the registered user by which the Location Task must be completed.</li>
+                    <li>"Task Completion" means when a registered user is within 100 meters of the specified location at the Task Time and confirms completion through the App.</li>
+                    <li>"Points" means the reward points (200 points per completed task) that users can collect to unlock flower badges.</li>
+                    <li>"Outstanding Balance" means any failed payments that the user owes.</li>
+                    <li>"Registration Information" means email address, credit card information, and other information required for using the App.</li>
+                </ol>
+            </section>
 
-            4. Service Usage
-            4.1. To set a Location Task, users must specify:
-            - The target location
-            - The Task Time
-            - The Task Amount
-            4.2. The Task Amount will be charged to the user's registered payment method if:
-            - The user is not within 100 meters of the specified location at the Task Time
-            - The user fails to confirm task completion through the App
-            4.3. Upon successful Task Completion, users will receive 200 Points.
-            4.4. Points can be collected and used to unlock flower badges within the App.
+            <section class="tos-section">
+                <h2>Article 3 (Registration)</h2>
+                <ol>
+                    <li>To use the App, users must agree to these Terms and submit the required Registration Information.</li>
+                    <li>Users must provide true, accurate, and complete information during registration.</li>
+                    <li>Users must keep their Registration Information up to date.</li>
+                    <li>The App may refuse registration in the following cases:
+                        <ul>
+                            <li>When provided information contains false, incorrect, or missing information</li>
+                            <li>When a minor has not obtained parental consent</li>
+                            <li>When the App otherwise deems registration inappropriate</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
 
-            5. Payments and Charges
-            5.1. Users must provide valid payment information to use the App.
-            5.2. If a payment fails, it will be recorded as an Outstanding Balance.
-            5.3. Users may pay Outstanding Balances at their convenience, but continued use of the App may be restricted until payment is made.
-            5.4. All payment processing fees are the responsibility of the user.
+            <section class="tos-section">
+                <h2>Article 4 (Service Usage)</h2>
+                <ol>
+                    <li>To set a Location Task, users must specify:
+                        <ul>
+                            <li>The target location</li>
+                            <li>The Task Time</li>
+                            <li>The Task Amount</li>
+                        </ul>
+                    </li>
+                    <li>The Task Amount will be charged to the user's registered payment method if:
+                        <ul>
+                            <li>The user is not within 100 meters of the specified location at the Task Time</li>
+                            <li>The user fails to confirm task completion through the App</li>
+                        </ul>
+                    </li>
+                    <li>Upon Task Completion, users will receive 200 Points.</li>
+                </ol>
+            </section>
 
-            6. Location Services and Privacy
-            6.1. The App requires access to device location services to function properly.
-            6.2. Location data is only collected when necessary to verify Task Completion.
-            6.3. Users' privacy is protected according to our Privacy Policy, which is incorporated into these Terms by reference.
+            <section class="tos-section">
+                <h2>Article 5 (Payments and Refunds)</h2>
+                <ol>
+                    <li>Users must provide valid payment information.</li>
+                    <li>If a payment fails, it will be recorded as an Outstanding Balance.</li>
+                    <li>Users may pay Outstanding Balances at their convenience, but continued use of the App may be restricted until payment is made.</li>
+                    <li>All payment processing fees are the responsibility of the user.</li>
+                    <li>Payment processing is conducted through Stripe's services.</li>
+                    <li>Task Amounts are generally non-refundable. However, in exceptional cases where the App determines that Task Completion was impossible due to significant technical issues with the App, a refund may be considered. In such cases, the burden of proof regarding the existence of technical issues and the impossibility of Task Completion lies with the user, and the App shall not be liable for any refund decisions regardless of the proof provided.</li>
+                </ol>
+            </section>
 
-            7. Prohibited Actions
-            7.1. Users shall not:
-            - Attempt to manipulate location data or circumvent location verification
-            - Use automated systems to complete tasks
-            - Share accounts or account credentials
-            - Use the App for illegal purposes
-            - Attempt to reverse engineer the App
-            - Harass or harm other users
-            - Submit false payment information
+            <section class="tos-section">
+                <h2>Article 6 (Location Services and Privacy)</h2>
+                <ol>
+                    <li>The App requires access to device location services to function properly.</li>
+                    <li>Location data is only collected when necessary to verify Task Completion.</li>
+                    <li>Users' privacy is protected according to our Privacy Policy, which is incorporated into these Terms by reference.</li>
+                </ol>
+            </section>
 
-            8. Service Interruption
-            8.1. The App service may be interrupted for:
-            - Maintenance
-            - Technical issues
-            - System updates
-            - Force majeure events
-            8.2. No refunds will be issued for tasks failed due to service interruptions.
+            <section class="tos-section">
+                <h2>Article 7 (Prohibited Actions)</h2>
+                <p>Users shall not:</p>
+                <ol>
+                    <li>Attempt to manipulate location data or circumvent location verification</li>
+                    <li>Use automated systems to complete tasks</li>
+                    <li>Share accounts or account credentials</li>
+                    <li>Use the App for illegal purposes</li>
+                    <li>Attempt to reverse engineer the App</li>
+                    <li>Harass or harm other users</li>
+                    <li>Submit false payment information</li>
+                </ol>
+            </section>
 
-            9. Points and Rewards
-            9.1. Points are awarded only for verified Task Completion.
-            9.2. Points have no monetary value and cannot be exchanged for cash.
-            9.3. Points and flower badges may not be transferred between accounts.
-            9.4. We reserve the right to modify the points system and rewards.
+            <section class="tos-section">
+                <h2>Article 8 (Service Interruption)</h2>
+                <ol>
+                    <li>The App service may be interrupted for:
+                        <ul>
+                            <li>Maintenance</li>
+                            <li>Technical issues</li>
+                            <li>System updates</li>
+                            <li>Force majeure events</li>
+                        </ul>
+                    </li>
+                    <li>No refunds will be issued for tasks failed due to service interruptions.</li>
+                </ol>
+            </section>
 
-            10. Account Termination
-            10.1. Users may terminate their account at any time.
-            10.2. Outstanding Balances must be paid before account termination.
-            10.3. We may terminate accounts for:
-                - Violation of these Terms
-                - Extended periods of inactivity
-                - Suspicious activity
-                - Failure to pay Outstanding Balances
+            <section class="tos-section">
+                <h2>Article 9 (Points and Rewards)</h2>
+                <ol>
+                    <li>Points are awarded only for verified Task Completion.</li>
+                    <li>Points have no monetary value and cannot be exchanged for cash.</li>
+                    <li>Points and flower badges may not be transferred between accounts.</li>
+                    <li>We reserve the right to modify the points system and rewards.</li>
+                </ol>
+            </section>
 
-            11. Limitation of Liability
-            11.1. The App is provided "as is" without warranties of any kind.
-            11.2. We are not responsible for:
-                - Failure to reach locations due to transportation issues
-                - Device or network failures
-                - Incorrect location data
-                - Lost or stolen devices
-            11.3. Maximum liability is limited to the amount paid by the user in the past 3 months.
+            <section class="tos-section">
+                <h2>Article 10 (Account Termination)</h2>
+                <ol>
+                    <li>Users may terminate their account at any time.</li>
+                    <li>Outstanding Balances must be paid before account termination.</li>
+                    <li>We may terminate accounts for:
+                        <ul>
+                            <li>Violation of these Terms</li>
+                            <li>Extended periods of inactivity</li>
+                            <li>Suspicious activity</li>
+                            <li>Failure to pay Outstanding Balances</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
 
-            12. Changes to Terms
-            12.1. These Terms may be updated at any time.
-            12.2. Users will be notified of changes through the App.
-            12.3. Continued use of the App constitutes acceptance of new Terms.
+            <section class="tos-section">
+                <h2>Article 11 (Limitation of Liability)</h2>
+                <ol>
+                    <li>The App is provided "as is" without warranties of any kind.</li>
+                    <li>We are not responsible for:
+                        <ul>
+                            <li>Failure to reach locations due to transportation issues</li>
+                            <li>Device or network failures</li>
+                            <li>Incorrect location data</li>
+                            <li>Lost or stolen devices</li>
+                        </ul>
+                    </li>
+                    <li>Maximum liability is limited to the amount paid by the user in the past 1 month.</li>
+                </ol>
+            </section>
 
-            13. Governing Law
-            13.1. These Terms shall be governed by the laws of [Your Jurisdiction].
-            13.2. Any disputes shall be resolved in the courts of [Your Jurisdiction].
-        </p>
+            <section class="tos-section">
+                <h2>Article 12 (Changes to Terms)</h2>
+                <ol>
+                    <li>We may update these Terms at any time.</li>
+                    <li>Updated Terms shall become effective upon notification within the App.</li>
+                    <li>Continued use of the App after changes constitutes acceptance of the new Terms.</li>
+                </ol>
+            </section>
+
+            <section class="tos-section">
+                <h2>Article 13 (Governing Law and Jurisdiction)</h2>
+                <ol>
+                    <li>These Terms shall be governed by the laws of Japan.</li>
+                    <li>The Tokyo District Court shall have exclusive jurisdiction in the first instance over any disputes relating to these Terms..</li>
+                </ol>
+            </section>
+
+            <section class="tos-section">
+                <h2>Article 14 (Contact Information)</h2>
+                <p>
+                    For inquiries regarding these Terms, please contact us at:<br>
+                    <span class="contact-email">[Your Contact Email]</span>
+                </p>
+            </section>
+
+            <section class="tos-section">
+                <h2>Effective Date</h2>
+                <p>
+                    These terms are effective as of 18 Feb 2025.
+                </p>
+            </section>
+        </div>
     </div>
 
     <!-- Footer -->
