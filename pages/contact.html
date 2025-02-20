@@ -1,20 +1,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locomi - Transform Your Goals into Reality with Location-Based Accountability | Available on iOS</title>
-    <meta name="description" content="Locomi helps you build lasting habits through location-based accountability. Set goals, show up, and earn beautiful flower badges while building better habits. Download now on iOS.">
-    <meta name="keywords" content="location based accountability, habit formation app, goal tracking, productivity app, iOS app, japanese app, flower badges, motivation app">
+    <title>Locomi - 位置情報を活用して目標達成をサポート | iOS アプリ</title>
+    <meta name="description" content="Locomiは位置情報を活用してあなたの習慣作りをサポートします。目標を設定し、実行し、美しい花のバッジを集めながら、より良い習慣を築きましょう。iOS でダウンロード可能。">
+    <meta name="keywords" content="位置情報 アカウンタビリティ, 習慣形成アプリ, 目標管理, 生産性アプリ, iOSアプリ, 日本語アプリ, フラワーバッジ, モチベーションアプリ">
     
     <!-- Open Graph tags -->
-    <meta property="og:title" content="Locomi - Location-Based Accountability App">
-    <meta property="og:description" content="Transform your goals into reality with location-based accountability. Available on iOS.">
+    <meta property="og:title" content="Locomi - 位置情報を活用したアカウンタビリティアプリ">
+    <meta property="og:description" content="位置情報を活用して目標を現実に。iOS でダウンロード可能。">
     <meta property="og:image" content="/api/placeholder/1200/630">
-    <meta property="og:url" content="https://locomiapp.com">
+    <meta property="og:url" content="https://jp.locomiapp.com">
     
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Locomi - Location-Based Accountability App">
-    <meta name="twitter:description" content="Turn your location into motivatio with location-based accountability. Available on iOS.">
+    <meta name="twitter:title" content="Locomi - 位置情報を活用したアカウンタビリティアプリ">
+    <meta name="twitter:description" content="位置情報であなたのモチベーションを高めましょう。iOS でダウンロード可能。">
     <meta name="twitter:image" content="/api/placeholder/1200/630">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -104,12 +104,13 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .privacy-section {
-            margin-bottom: 1rem;
+        .contact-section {
+            margin-bottom: 2rem;
             padding-bottom: 1rem;
+            justify-items: center;
         }
 
-        .privacy-section h2 {
+        .contact-section h2 {
             font-size: 1.25rem;
             font-weight: 600;
             color: #1a1a1a;
@@ -117,46 +118,31 @@
             margin-bottom: 1rem;
         }
 
-        .privacy-section p {
+        .contact-section p {
             margin-bottom: 1rem;
             line-height: 1.6;
         }
 
-        .privacy-section ul, 
-        .privacy-section ol {
+        .contact-section ul, 
+        .contact-section ol {
             margin: 1rem 0;
             padding-left: 2rem;
         }
 
-        .privacy-section ul {
+        .contact-section ul {
             list-style-type: disc;
         }
 
-        .privacy-section ol {
+        .contact-section ol {
             list-style-type: decimal;
         }
 
-        .privacy-section li {
+        .contact-section li {
             margin-bottom: 0.5rem;
             line-height: 1.5;
         }
 
-        .privacy-note {
-            background-color: #36b5ff25;
-            padding: 1rem;
-            border-radius: 6px;
-            margin: 1rem 0;
-            font-size: 0.875rem;
-        }
-
-        .last-updated {
-            text-align: center;
-            color: #666;
-            font-size: 0.875rem;
-            margin-bottom: 2rem;
-        }
-
-        .note {
+        .contact-note {
             background-color: #f8f9fa;
             padding: 1rem;
             border-radius: 6px;
@@ -167,6 +153,8 @@
         .contact-email {
             color: #666;
             font-style: italic;
+            justify-items: center;
+            padding: 12rem;
         }
     </style>
 
@@ -182,14 +170,14 @@
 
                 langSelect.addEventListener('change', () => {
                     if (langSelect.value === 'jp') {
-                        window.location.href = 'https://jp.locomiapp.com/pages/privacy.html';
+                        window.location.href = 'https://jp.locomiapp.com/pages/contact.html';
                     } else {
-                        window.location.href = 'https://locomiapp.com/pages/privacy.html';
+                        window.location.href = 'https://locomiapp.com/pages/contact.html';
                     }
                 });
             }
         });
-        
+
         function createGradientBackground(containerElement) {
             const circles = [
                 { width: "250px", height: "250px", top: "10%", left: "-10%" },
@@ -226,7 +214,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            createGradientBackground(document.getElementById('container'));
+            createGradientBackground(document.getElementById('contact-section'));
         });
     </script>
 </head>
@@ -274,113 +262,20 @@
         </div>
     </nav>
 
-    <div class="pt-20 pb-20">
-        <div id="container" class="container">
-            <h1 class="text-3xl font-bold text-center mb-4">Privacy Policy</h1>
+    <div class="pt-40 pb-40 bg-gray-100">
+        <div id="contact" class="container bg-white">
+            <h1 class="text-3xl font-bold text-center mb-4">Contact Us</h1>
             
-            <div class="text-gray-500 text-sm text-center mb-8">
-                Last Updated: 18 Feb 2025
-            </div>
-
-            <section class="privacy-section">
+            <section class="contact-section">
+                <h2>Thank you always for using Locomi!</h2>
                 <p>
-                    Thank you for using Locomi (hereinafter, "app/we/our/us"). This Privacy Policy (hereinafter, "policy") explains how we collect, use, and protect your personal information when you use our app.
-                </p>
-            </section>
-
-            <section class="privacy-section">
-                <h2>What Information We Collect</h2>
-                <p>We collect and store the following information:</p>
-                <ul>
-                    <li>Email address</li>
-                    <li>Payment information (processed securely through Stripe)</li>
-                    <li>Accountability challenge data (commitment times and locations)</li>
-                    <li>Achievement data (points earned and badges)</li>
-                    <li>Outstanding payment information</li>
-                </ul>
-                <div class="privacy-note">
-                    Note: While our app requires temporary access to your location to verify your presence at commitment locations, we do not store or retain any location data after verification.
-                </div>
-            </section>
-    
-            <section class="privacy-section">
-                <h2>How We Use Your Information</h2>
-                <ol>
-                    <li>To operate the core accountability service</li>
-                    <li>To process payments through Stripe when commitments are not met</li>
-                    <li>To maintain your achievement progress (points and badges)</li>
-                    <li>To communicate essential service updates</li>
-                    <li>To verify your identity and prevent fraud</li>
-                    <li>To respond to your support requests</li>
-                </ol>
-            </section>
-    
-            <section class="privacy-section">
-                <h2>Data Storage and Security</h2>
-                <ul>
-                    <li>All data is stored securely in Firebase</li>
-                    <li>Payment processing is handled through Stripe's secure platform</li>
-                    <li>We implement industry-standard security measures to protect your information</li>
-                    <li>We do not store your complete credit card information (this is handled by Stripe)</li>
-                </ul>
-            </section>
-    
-            <section class="privacy-section">
-                <h2>Your Data Rights</h2>
-                <ul>
-                    <li>Access your personal information</li>
-                    <li>Update your email address and payment information</li>
-                    <li>Delete your account and associated data</li>
-                    <li>Request an export of your data</li>
-                </ul>
-                <div class="privacy-note">
-                    Note: Account deletion and payment method removal require that you have no outstanding payments.
-                </div>
-            </section>
-    
-            <section class="privacy-section">
-                <h2>Data Retention</h2>
-                <p>
-                    We retain your data only as long as necessary to provide our services or as required by law. When you delete your account, we will remove all your personal information from our database, except where we need to retain certain information for legal or administrative purposes.
-                </p>
-            </section>
-    
-            <section class="privacy-section">
-                <h2>Third-Party Services</h2>
-                <p>We use the following third-party services:</p>
-                <ul>
-                    <li>Firebase for data storage</li>
-                    <li>Stripe for payment processing</li>
-                </ul>
-                <p>
-                    Each of these services has their own privacy policies governing how they handle your data.
-                </p>
-            </section>
-    
-            <section class="privacy-section">
-                <h2>Changes to Privacy Policy</h2>
-                <p>
-                    We may update this Privacy Policy from time to time. We will notify you of any significant changes through the app or via email.
-                </p>
-            </section>
-    
-            <section class="privacy-section">
-                <h2>Contact Information</h2>
-                <p>
-                    If you have any questions about this Privacy Policy or your data, please contact us at:<br>
+                    For any queries related to Locomi, reach out to us at the following email address<br>
                     <span class="contact-email">info at locomiapp dot com</span><br>
                     Please replace 'at' with the symbol '@', and 'dot' with '.'
                 </p>
             </section>
-    
-            <section class="privacy-section">
-                <h2>Effective Date</h2>
-                <p>
-                    This policy is effective as of 18 Feb 2025.
-                </p>
-            </section>
         </div>
-</div>
+    </div>
 
     <!-- Footer -->
     <footer class="gradient-bg text-white py-12">
@@ -411,8 +306,8 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Support</h4>
                     <ul class="space-y-2">
-                        <li><a href="contact.html" class="text-black hover:text-white">Contact Us</a></li>
-                        <li><a href="#" class="text-black hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-black hover:text-white">Contact Us</a></li>
+                        <li><a href="privacy.html" class="text-black hover:text-white">Privacy Policy</a></li>
                         <li><a href="tos.html" class="text-black hover:text-white">Terms of Service</a></li>
                     </ul>
                 </div>
